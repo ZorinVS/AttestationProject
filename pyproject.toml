@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "attestationproject"
+version = "0.1.0"
+description = ""
+authors = ["Vladislav Zorin <zorin.3v6@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "^1.1.0"
+django = "^5.2"
+djangorestframework = "^3.16.0"
+psycopg2-binary = "^2.9.10"
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.2.0"
+mypy = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
