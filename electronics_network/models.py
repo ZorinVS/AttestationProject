@@ -1,6 +1,8 @@
 from django.conf import settings
 from django.db import models
 
+from electronics_network.services import get_supply_chain_level_by_supplier
+
 
 class SupplyChainMember(models.Model):
     """ Модель участника цепочки поставки """
@@ -17,12 +19,6 @@ class SupplyChainMember(models.Model):
 
     name = models.CharField(max_length=254, unique=True, verbose_name='Название участника сети продаж')
     type = models.CharField(max_length=30, choices=TYPE_CHOICES, verbose_name='Тип участника')
-    contact = models.OneToOneField(
-        'ContactInfo',
-        on_delete=models.CASCADE,
-        related_name='supply_chain_member',
-        verbose_name='Контактные данные',
-    )
     supplier = models.ForeignKey(
         'self',
         blank=True,
@@ -36,18 +32,16 @@ class SupplyChainMember(models.Model):
     )
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Время создания')
     user = models.ForeignKey(
-        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='supply_chain_members', verbose_name='Создатель'
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='supply_chain_members',
+        verbose_name='Создатель',
     )
 
     @property
     def level(self):
         """ Вычисление уровня участника в иерархии поставок """
-        lvl = 0
-        supplier = self.supplier
-        while supplier:
-            lvl += 1
-            supplier = supplier.supplier
-        return lvl
+        return get_supply_chain_level_by_supplier(self.supplier)
 
     def __str__(self):
         return f'{self.name} (уровень {self.level} – {self.get_type_display()})'
@@ -61,6 +55,12 @@ class SupplyChainMember(models.Model):
 class ContactInfo(models.Model):
     """ Модель контактных данных """
 
+    network_member = models.OneToOneField(
+        'SupplyChainMember',
+        on_delete=models.CASCADE,
+        related_name='contact',
+        verbose_name='Участник',
+    )
     email = models.EmailField(verbose_name='Email')
     country = models.CharField(max_length=99, verbose_name='Страна')
     city = models.CharField(max_length=99, verbose_name='Город')

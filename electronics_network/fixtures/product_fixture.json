@@ -1,0 +1,57 @@
+[
+{
+    "model": "electronics_network.product",
+    "pk": 1,
+    "fields": {
+        "name": "Smart Plug X1",
+        "model": "X1",
+        "release_date": "2023-05-10",
+        "members": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "electronics_network.product",
+    "pk": 2,
+    "fields": {
+        "name": "PhoneMax Pro",
+        "model": "Pro 2023",
+        "release_date": "2023-08-15",
+        "members": [
+            1,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "electronics_network.product",
+    "pk": 3,
+    "fields": {
+        "name": "UltraMonitor 4K",
+        "model": "UM-4000",
+        "release_date": "2022-11-20",
+        "members": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "electronics_network.product",
+    "pk": 4,
+    "fields": {
+        "name": "BassBeats Vibe",
+        "model": "BB-100",
+        "release_date": "2024-02-05",
+        "members": [
+            1,
+            3,
+            5
+        ]
+    }
+}
+]
