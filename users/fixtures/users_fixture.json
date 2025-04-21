@@ -1,0 +1,82 @@
+[
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$ZXjfFkV4Sv7vWYZlOiZPCE$zPBY8qaYvooFK3MuhnAJK3lMI4Z+yC+INqhRllCTcKE=",
+        "last_login": "2025-04-16T18:25:44Z",
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-16T12:20:01Z",
+        "email": "superuser@email.com",
+        "phone_number": "+7 (916) 123-45-67",
+        "city": "Москва",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$PoukyNqB2WaWnPzQ2o7Xw5$ic3bNLqm94fpH+zyr3irzrXKfdP/fZcs+V4Wyg5u638=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-16T12:45:21Z",
+        "email": "active.employee@email.com",
+        "phone_number": "+7 (921) 987-65-43",
+        "city": "Санкт-Петербург",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$MGB2cR0yBUeFwhKzfkeAUF$NaxpMyB14AnqLrYozisuJvJuhlYvGcBsTHK69qtfesM=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": false,
+        "date_joined": "2025-04-16T12:46:46Z",
+        "email": "inactive.employee@email.com",
+        "phone_number": "+7 (383) 555-66-77",
+        "city": "Новосибирск",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$JNJH99DBQDWoUhhOnNzzEr$xl0bxEzNwxJlSpZzv4qiD+i6SyHGwf7Cmc2BbvK+8g8=",
+        "last_login": null,
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-16T12:48:06Z",
+        "email": "new.user@email.com",
+        "phone_number": "+7 (843) 700-80-90",
+        "city": "Казань",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -1,0 +1,62 @@
+[
+{
+    "model": "electronics_network.contactinfo",
+    "pk": 1,
+    "fields": {
+        "network_member": 1,
+        "email": "factory@electrozavod.com",
+        "country": "Россия",
+        "city": "Москва",
+        "street": "Заводская",
+        "house_number": "1А"
+    }
+},
+{
+    "model": "electronics_network.contactinfo",
+    "pk": 2,
+    "fields": {
+        "network_member": 2,
+        "email": "contact@megaretail.com",
+        "country": "Россия",
+        "city": "Санкт-Петербург",
+        "street": "Невский проспект",
+        "house_number": "45"
+    }
+},
+{
+    "model": "electronics_network.contactinfo",
+    "pk": 3,
+    "fields": {
+        "network_member": 3,
+        "email": "owner@technoshop-spb.ru",
+        "country": "Россия",
+        "city": "Санкт-Петербург",
+        "street": "Ленина",
+        "house_number": "12"
+    }
+},
+{
+    "model": "electronics_network.contactinfo",
+    "pk": 4,
+    "fields": {
+        "network_member": 4,
+        "email": "info@gadgetmart-kzn.ru",
+        "country": "Россия",
+        "city": "Казань",
+        "street": "Баумана",
+        "house_number": "7Б"
+    }
+},
+{
+    "model": "electronics_network.contactinfo",
+    "pk": 5,
+    "fields": {
+        "network_member": 5,
+        "email": "contact@soloelectronics.ru",
+        "country": "Россия",
+        "city": "Нижний Новгород",
+        "street": "Пушкина",
+        "house_number": "9"
+    }
+}
+]

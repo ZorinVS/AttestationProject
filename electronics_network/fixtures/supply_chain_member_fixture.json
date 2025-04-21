@@ -1,0 +1,62 @@
+[
+{
+    "model": "electronics_network.supplychainmember",
+    "pk": 1,
+    "fields": {
+        "name": "ElectroZavod Ltd.",
+        "type": "factory",
+        "supplier": null,
+        "debt": "0.00",
+        "created_at": "2025-04-17T10:24:03.297Z",
+        "user": 1
+    }
+},
+{
+    "model": "electronics_network.supplychainmember",
+    "pk": 2,
+    "fields": {
+        "name": "MegaRetail Group",
+        "type": "retail",
+        "supplier": 1,
+        "debt": "120000.00",
+        "created_at": "2025-04-17T10:26:21.995Z",
+        "user": 2
+    }
+},
+{
+    "model": "electronics_network.supplychainmember",
+    "pk": 3,
+    "fields": {
+        "name": "TechnoShop SPB",
+        "type": "entrepreneur",
+        "supplier": 2,
+        "debt": "15000.00",
+        "created_at": "2025-04-17T10:35:30.970Z",
+        "user": 2
+    }
+},
+{
+    "model": "electronics_network.supplychainmember",
+    "pk": 4,
+    "fields": {
+        "name": "GadgetMart Kazan",
+        "type": "retail",
+        "supplier": 1,
+        "debt": "60000.00",
+        "created_at": "2025-04-17T10:38:27.034Z",
+        "user": 3
+    }
+},
+{
+    "model": "electronics_network.supplychainmember",
+    "pk": 5,
+    "fields": {
+        "name": "SoloElectronics",
+        "type": "entrepreneur",
+        "supplier": 1,
+        "debt": "5000.00",
+        "created_at": "2025-04-17T10:42:49.647Z",
+        "user": 2
+    }
+}
+]
